@@ -14,10 +14,10 @@ const Products = () => {
 	const [productos, setProductos] = useState(local);
 
 	return (
-		<div>
+		<div style={{width:250,margin:'auto'}}>
 			{productos?.map((el) => {
 				return (
-					<Card>
+					<Card style={{marginTop:10}}>
 						<CardActionArea>
 							<CardMedia height='150' component='img' image={el.url} />
 							<CardContent>
